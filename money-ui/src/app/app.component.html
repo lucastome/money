@@ -1,0 +1,11 @@
+
+<app-navbar></app-navbar>
+<p-toast position="bottom-left" ></p-toast>
+<router-outlet></router-outlet>
+
+<p-confirmDialog header="Confirmação" icon="fa fa-question-circle" #confirmacao>
+    <p-footer>
+        <button type="button" pButton icon="fa fa-check" label="Sim" (click)="confirmacao.accept()"></button>
+        <button type="button" pButton icon="fa fa-times" label="Não" (click)="confirmacao.reject()"></button>
+    </p-footer>
+</p-confirmDialog>
